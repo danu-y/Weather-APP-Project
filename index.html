@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter a city..."
+          value="Addis Ababa"
+        />
+        <button onclick="getWeather()">Search</button>
+      </div>
+      <div class="weather-info">
+        <h1 id="city-name"></h1>
+        <div class="current-weather">
+          <span id="current-temp"></span>°C
+          <img id="weather-icon" src="" alt="Weather Icon" />
+        </div>
+        <p id="weather-description"></p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind: <span id="wind"></span> km/h</p>
+      </div>
+      <div class="forecast">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-data"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
